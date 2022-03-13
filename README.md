@@ -1,3 +1,11 @@
+We are from Fun-Tastic Four Team 
+This project is for SRMAP ADD Club Conducted APPATHON_1.0 Hackathon
+
+Along with me , CONTRIBUTED MEMBERS are: 
+KRISHNA SAI GOPISETTY , username :Tesipog (Main lead of this Project)
+Thumma Sricharan , username : sricharan-thumma
+
+
 OUR SOURCE CODES ARE IN MASTER BRANCH
 kindly open it and visit
 
