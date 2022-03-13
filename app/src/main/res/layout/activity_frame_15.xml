@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="frame15VM" type="com.egif.app.modules.frame15.data.viewmodel.Frame15VM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearGroup2"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameGroup5"
+            android:layout_height="@dimen/_356pxv"
+            android:layout_marginBottom="@dimen/_20pxv" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageEzgif1"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_356pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_ezgif1}" tools:src="@drawable/img_ezgif1"/>
+            <View android:background="@color/white_A700"
+                android:id="@+id/viewRectangle98"
+                android:layout_gravity="bottom|center"
+                android:layout_height="@dimen/_44pxv"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_364pxh"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

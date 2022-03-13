@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">chandra_s_application3</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="msg_check_your_app">"Check your app's UI from the below demo screens of your app."</string>
+<string name="lbl_emerge">EMERGE</string>
+<string name="lbl_app_navigation">App Navigation</string>
+<string name="lbl_office_safety">OFFICE SAFETY</string>
+<string name="lbl_welcome_to">WELCOME TO</string>
+<string name="lbl_welcome">Welcome</string>
+<string name="msg_this_contact_has_no_phone_nu">This contact has no phone number</string>
+    <string name="msg_signup_as_compa" />
+    <string name="msg_signup_as_emplo" />
+    <string name="msg_signup_as_publi" />
+    <string name="msg_signup_as_public" />
+    <string name="lbl_ibm" />
+    <string name="lbl_login" />
+</resources>

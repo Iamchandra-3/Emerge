@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="welcomeVM" type="com.app.modules.welcome.data.viewmodel.WelcomeVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearWelcome"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearGroup4"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyle">
+            <FrameLayout android:id="@+id/frameGroup7"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_275pxv"
+                android:layout_marginEnd="@dimen/_38pxh"
+                android:layout_marginStart="@dimen/_51pxh"
+                android:layout_marginTop="@dimen/_121pxv" android:layout_width="@dimen/_286pxh">
+
+                <TextView
+                    android:id="@+id/txtEMERGE"
+                    style="@style/txtOpenSansromanregular30"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_106pxv"
+                    android:layout_marginBottom="@dimen/_106pxv"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{welcomeVM.welcomeModel.txtEMERGE}"
+                    tools:text="@string/lbl_emerge" />
+
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtWELCOMETO"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_29pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_29pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{welcomeVM.welcomeModel.txtWELCOMETO}"
+                    style="@style/txtRobotoromanregular30" tools:text="@string/lbl_welcome_to"/>
+
+                <ImageView
+                    android:id="@+id/imageLogoremovebgp"
+                    imageRes="@{@drawable/img_logoremovebgp}"
+                    android:layout_width="256dp"
+                    android:layout_height="@dimen/_275pxh"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:scaleType="fitXY"
+                    tools:src="@drawable/img_logoremovebgp" />
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtOFFICESAFETY"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_29pxv"
+                android:layout_marginEnd="@dimen/_51pxh"
+                android:layout_marginStart="@dimen/_51pxh"
+                android:layout_marginTop="@dimen/_219pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{welcomeVM.welcomeModel.txtOFFICESAFETY}"
+                style="@style/txtRobotoromanregular20" tools:text="@string/lbl_office_safety"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

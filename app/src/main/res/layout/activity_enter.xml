@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="enterVM" type="com.enter.app.modules.enter.data.viewmodel.EnterVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearEnter"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle">
+        <LinearLayout android:id="@+id/linearGroup14"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <FrameLayout android:id="@+id/frameGroup4"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_172pxv"
+                android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_256pxh">
+
+                <TextView
+                    android:id="@+id/txtEMERGE"
+                    style="@style/txtOpenSansromanregular30"
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_67pxv"
+                    android:layout_marginBottom="@dimen/_67pxv"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{enterVM.enterModel.txtEMERGE}"
+                    tools:text="@string/lbl_emerge" />
+
+                <ImageView
+                    android:id="@+id/imageLogoremovebgp"
+                    imageRes="@{@drawable/img_logoremovebgp}"
+                    android:layout_width="193dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:scaleType="fitXY"
+                    tools:src="@drawable/img_logoremovebgp" />
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignupAsCompa"
+                style="@style/btnGradientRoundedOutline"
+                android:layout_width="322dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_11pxv"
+                android:paddingBottom="@dimen/_10pxv"
+                android:singleLine="true"
+                android:text="@string/msg_signup_as_compa"
+                android:textAllCaps="false"
+                tools:text="signup as company" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignupAsEmplo"
+                style="@style/btnGradientRoundedOutline_1"
+                android:layout_width="329dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_11pxv"
+                android:paddingBottom="@dimen/_10pxv"
+                android:singleLine="true"
+                android:text="@string/msg_signup_as_emplo"
+                android:textAllCaps="false"
+                tools:text="signup as employee" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignupAsPubli"
+                style="@style/btnGradientRoundedOutline_2"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_11pxv"
+                android:paddingBottom="@dimen/_10pxv"
+                android:singleLine="true"
+                android:text="@string/msg_signup_as_public"
+                android:textAllCaps="false"
+                tools:text="signup as public" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

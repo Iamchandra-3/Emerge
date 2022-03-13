@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="publicInterfaceVM" type="com.public.app.modules.publicinterface.data.viewmodel.PublicInterfaceVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearGroup16"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearGroup11"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStyle">
+                <FrameLayout android:id="@+id/frameGroup14"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_155pxv"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_3pxv" android:layout_width="@dimen/_264pxh">
+
+                    <TextView
+                        android:id="@+id/txtEMERGE"
+                        style="@style/txtGoturegular30"
+                        android:layout_width="124dp"
+                        android:layout_height="59dp"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_59pxv"
+                        android:layout_marginBottom="@dimen/_59pxv"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@{publicInterfaceVM.publicInterfaceModel.txtEMERGE}"
+                        tools:text="@string/lbl_emerge" />
+
+                    <ImageView
+                        android:id="@+id/imageLogoremovebgp"
+                        imageRes="@{@drawable/img_logoremovebgp}"
+                        android:layout_width="@dimen/_179pxh"
+                        android:layout_height="@dimen/_155pxh"
+                        android:layout_gravity="start"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:scaleType="fitXY"
+                        tools:src="@drawable/img_logoremovebgp" />
+                </FrameLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearGroup5"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_126pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylegray_300cornerRadius">
+                    <ImageView android:id="@+id/imageIcons8iphone1"
+                        android:layout_height="@dimen/_33pxh"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="@dimen/_25pxh"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="@dimen/_31pxh"
+                        android:scaleType="fitXY" android:src="@drawable/img_icons8iphone1"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtEnterPhoneNum"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginEnd="@dimen/_43pxh"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_marginTop="@dimen/_9pxv"
+                        android:layout_weight="0.87"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{publicInterfaceVM.publicInterfaceModel.txtEnterPhoneNum}"
+                        style="@style/txtMerriweatherregular20" tools:text="Enter phone num"/>
+                </LinearLayout>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSendOTP"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_56pxh"
+                    android:layout_marginStart="@dimen/_56pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{publicInterfaceVM.publicInterfaceModel.txtSendOTP}"
+                    style="@style/txtMerriweatherbold13" tools:text="send otp"/>
+                <TextView android:gravity="start"
+                    android:id="@+id/txtEnterOTP"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_59pxh"
+                    android:layout_marginStart="@dimen/_59pxh"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_13pxv"
+                    android:paddingStart="@dimen/_9pxh"
+                    android:paddingTop="@dimen/_13pxv"
+                    android:text="@{publicInterfaceVM.publicInterfaceModel.txtEnterOTP}"
+                    style="@style/txtSolid" tools:text="enter otp"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtResendOTP"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_56pxh"
+                    android:layout_marginStart="@dimen/_56pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{publicInterfaceVM.publicInterfaceModel.txtResendOTP}"
+                    style="@style/txtMerriweatherbold13" tools:text="resend otp"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnLOGIN"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_53pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_13pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_13pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_login"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="login"/>
+                <TextView android:gravity="start"
+                    android:id="@+id/txtByClickingLog"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20pxv"
+                    android:layout_marginEnd="@dimen/_6pxh"
+                    android:layout_marginStart="@dimen/_33pxh"
+                    android:layout_marginTop="@dimen/_53pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{publicInterfaceVM.publicInterfaceModel.txtByClickingLog}"
+                    style="@style/txtMerriweatherregular14" tools:text="By clicking log in , you agree to our  Privacy Policy and Terms of Services"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

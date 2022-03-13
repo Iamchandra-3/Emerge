@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="companyInterfaceVM" type="com.companyinterface.app.modules.companyinterface.data.viewmodel.CompanyInterfaceVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearCompanyInterfa"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle">
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameGroup6"
+            android:layout_height="match_parent" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearGroup17"
+                android:layout_gravity="bottom|center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_17pxh"
+                android:layout_marginStart="@dimen/_17pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearGroup2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_7pxh"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylegray_900_82cornerRadius">
+                    <ImageView android:id="@+id/imageIcons8mail500"
+                        android:layout_height="@dimen/_32pxh"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_39pxh"
+                        android:scaleType="fitXY" android:src="@drawable/img_icons8mail500"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtContinueWithM"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_13pxv"
+                        android:layout_marginEnd="@dimen/_23pxh"
+                        android:layout_marginStart="@dimen/_24pxh"
+                        android:layout_marginTop="@dimen/_13pxv"
+                        android:layout_weight="0.83"
+                        android:layout_width="10dp"
+                        android:singleLine="true"
+                        android:text="@{companyInterfaceVM.companyInterfaceModel.txtContinueWithM}"
+                        style="@style/txtMerriweatherregular20" tools:text="continue with mail"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearGroup3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_7pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylegray_900_82cornerRadius">
+                    <ImageView android:id="@+id/imageIcons8iphone1"
+                        android:layout_height="@dimen/_33pxh"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginStart="@dimen/_18pxh"
+                        android:layout_marginTop="@dimen/_9pxv"
+                        android:layout_width="@dimen/_31pxh"
+                        android:scaleType="fitXY" android:src="@drawable/img_icons8iphone1"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtContinueWithP"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_13pxv"
+                        android:layout_marginEnd="@dimen/_5pxh"
+                        android:layout_marginStart="@dimen/_24pxh"
+                        android:layout_marginTop="@dimen/_13pxv"
+                        android:layout_weight="0.87"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{companyInterfaceVM.companyInterfaceModel.txtContinueWithP}"
+                        style="@style/txtMerriweatherregular20_1" tools:text="continue with phone"/>
+                </LinearLayout>
+                <TextView android:id="@+id/txtByClickingLog"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_71pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{companyInterfaceVM.companyInterfaceModel.txtByClickingLog}"
+                    style="@style/txtMerriweatherregular14" tools:text="By clicking log in , you agree to our  Privacy Policy and Terms of Services"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/frameGroup8"
+                android:layout_gravity="start"
+                android:layout_height="match_parent" android:layout_width="match_parent">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtEMERGE"
+                    android:layout_gravity="top|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_66pxv"
+                    android:layout_marginEnd="@dimen/_116pxh"
+                    android:layout_marginStart="@dimen/_116pxh"
+                    android:layout_marginTop="@dimen/_66pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{companyInterfaceVM.companyInterfaceModel.txtEMERGE}"
+                    style="@style/txtGoturegular30" tools:text="@string/lbl_emerge"/>
+                <ImageView android:id="@+id/imageLogoremovebgp"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_130pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="@dimen/_149pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_logoremovebgp}" tools:src="@drawable/img_logoremovebgp"/>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>
